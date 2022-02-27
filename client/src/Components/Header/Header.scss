@@ -1,0 +1,227 @@
+@import "src/Mixins";
+@import "src/Colors";
+
+.container-header {
+
+  .container-header-div {
+    @include flex;
+    justify-content: space-between;
+    height: 86px;
+
+    .rightMenu {
+      @include flex;
+      justify-content: space-between;
+
+      .person {
+        @include flex;
+        justify-content: normal;
+        margin-right: 53px;
+
+        span {
+          line-height: 16px;
+          margin: 0 3px;
+          cursor: pointer;
+        }
+      }
+
+      .person-image {
+        margin-right: 10px;
+      }
+
+      img {
+        width: 180px;
+        height: 46px;
+      }
+
+      .block-basket {
+        @include flex;
+        justify-content: normal;
+
+        span {
+          line-height: 16px;
+          cursor: pointer;
+        }
+
+        a {
+          position: relative;
+        }
+
+        .add-to-cart {
+          position: absolute;
+          top: 0;
+          left: 10px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50px;
+          background: $header-count;
+          border: 2px solid white;
+          text-align: center;
+        }
+
+        img {
+          margin-right: 10px;
+        }
+
+        a {
+          @include flex;
+          justify-content: normal;
+          line-height: 16px;
+          text-decoration: none;
+        }
+      }
+
+      div:first-child {
+        img {
+          width: 18px;
+          height: 24px;
+        }
+      }
+
+      div:last-child {
+        img {
+          width: 22px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+
+.modal-register {
+  @include modal;
+  height: 660px;
+
+  .modal-container {
+    padding: 56px 72px 0 72px;
+
+    .name-modal {
+      @include nameModal;
+    }
+
+    .input-modal {
+
+      input {
+        @include input;
+        color: $text;
+
+        :last-child {
+          margin-bottom: 0;
+        }
+      }
+
+
+      label {
+        font-weight: 600;
+        line-height: 16px;
+      }
+    }
+
+    .button-modal {
+      @include button;
+      @include flex;
+      width: 100%;
+      margin: 8px 0 40px 0;
+    }
+
+    .without-account {
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .sign-in {
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+      opacity: 50%;
+
+      &:hover {
+        opacity: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.modal-login {
+  @include modal;
+  height: 516px;
+
+  .modal-login {
+    padding: 56px 84px 0 84px;
+
+    .name-modal {
+      @include nameModal;
+    }
+
+    .input-modal {
+
+      input {
+        @include input;
+        color: $text-input;
+
+
+        :last-child {
+          margin-bottom: 0;
+        }
+      }
+
+
+      label {
+        font-weight: 600;
+        line-height: 16px;
+      }
+    }
+
+    .button-modal {
+      @include button;
+      @include flex;
+      width: 100%;
+      margin: 8px 0 40px 0;
+    }
+
+    .without-account {
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .sign-in {
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+      opacity: 50%;
+      text-decoration: underline;
+
+      &:hover {
+        opacity: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.added-text-error {
+  font-weight: 500;
+  line-height: 16px;
+  color: $text-error;
+  margin-bottom: 0;
+  position: relative;
+  top: -20px;
+}
+
+.added-text-error-1 {
+  font-weight: 500;
+  line-height: 16px;
+  color: $text-error;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.border-input-error {
+  border: 1px solid $text-error!important;
+}
+
+.pointer {
+  cursor: pointer;
+}

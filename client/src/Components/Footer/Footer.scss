@@ -1,0 +1,41 @@
+@import "src/Mixins";
+@import "src/Colors";
+
+.footer {
+  @include flex;
+  justify-content: space-between;
+  height: 110px;
+
+  a:first-child {
+    margin-left: 0;
+  }
+
+  a{
+    margin-left: 64px;
+    line-height: 20px;
+    color: $text;
+    text-decoration: none;
+    transition: 0.1s;
+
+    :hover {
+      transition: 0.1s;
+    }
+  }
+}
+
+.container-about-company {
+  background: $background-about-company;
+
+  div {
+    @include flex;
+    justify-content: normal;
+    text-align: left;
+    height: 45px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 16px;
+    color: $text;
+  }
+}

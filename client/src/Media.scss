@@ -1,0 +1,121 @@
+@media (max-width: 1150px) {
+  .container {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+
+  .cards-container {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 802px) {
+  .footer {
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 10px 0;
+
+    a {
+      width: 100%;
+    }
+  }
+
+  .links-footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      margin: 3px 0;
+    }
+  }
+
+  .container-about-company {
+    .container {
+      justify-content: center;
+    }
+  }
+
+  .container-product-card .container .product-card .product-grid div:last-child .article {
+    width: 100%;
+  }
+
+  .container-product-card .container .product-card .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .container-product-card .container .product-card .product-grid .product-img {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+  }
+
+  .button-basket {
+    justify-content: center;
+  }
+
+  .container-product-card .container .product-card .product-grid div:last-child p:nth-child(4) {
+    margin-bottom: 10px;
+  }
+
+  .container-product-card .container .product-card .product-grid div:last-child .count {
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .container-product-card .container .product-card .product-grid div:last-child .count button {
+    margin: 0;
+  }
+
+  .container-product-card .container .product-card .product-grid div:last-child .count span:nth-child(3) {
+    margin: 0 5px;
+  }
+
+  .container-product-card .container .product-card .product-grid div:last-child button {
+    margin: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .container-header .container-header-div .rightMenu .person {
+    margin-right: 5px;
+  }
+
+  .container-content div .logo-ice-cream img {
+    width: 100%;
+  }
+
+  .container-basket .container-content-basket {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    div:first-child {
+      width: 100%;
+    }
+  }
+
+  .container-basket .container-content-basket .empty-basket {
+    margin: 30px 0;
+  }
+
+  .container-basket .container-content-basket .sub-total div:first-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 372px) {
+  .container-header .container-header-div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container-content div .cards-container .card div:first-child img {
+    width: 70%;
+  }
+}

@@ -1,0 +1,188 @@
+@import "src/Mixins";
+@import "src/Colors";
+
+.container-product-card {
+  @include containerContent;
+
+  .rotate-image {
+    transform: rotate(360deg);
+    transition: 1s;
+  }
+
+  .container {
+
+    .product-card {
+      margin-top: 40px;
+
+      .bread-crumbs {
+        margin-bottom: 30px;
+
+        a {
+          text-decoration: none;
+        }
+
+        span:first-child {
+          opacity: 0.5;
+        }
+
+        span:last-child {
+          margin-left: 8px;
+        }
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 48px;
+
+        .product-img {
+          @include flex;
+          background: $background;
+          height: 524px;
+          border-radius: 30px;
+        }
+
+        div:last-child {
+
+          .button-basket {
+            @include flex;
+            justify-content: normal;
+
+            div {
+              @include flex;
+              width: 200px;
+            }
+
+            img {
+              width: 24px;
+              height: 24px;
+            }
+
+            .added-text {
+              margin-left: 8px;
+              font-family: Inter, sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 16px;
+              color: $text-add-to-basket;
+              margin-bottom: 0;
+            }
+
+            .added-text-error {
+              margin-left: 8px;
+              font-family: Inter, sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 16px;
+              color: $text-error;
+              margin-bottom: 0;
+            }
+          }
+
+          .article {
+            @include flex;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 12px;
+            color: $text;
+            width: 50%;
+            height: 28px;
+            background: $background-article;
+            border-radius: 26px;
+            margin-bottom: 24px;
+          }
+
+          p:nth-child(2) {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 36px;
+            margin-bottom: 24px;
+          }
+
+          p:nth-child(3) {
+            font-weight: 600;
+            line-height: 22px;
+            margin-bottom: 8px;
+          }
+
+          p:nth-child(4) {
+            line-height: 22px;
+            color: $text;
+            margin-bottom: 32px;
+          }
+
+          .count {
+            @include flex;
+            justify-content: normal;
+            margin-bottom: 40px;
+
+            span:first-child {
+              font-size: 24px;
+              line-height: 16px;
+              color: $text;
+              margin-right: 24px;
+            }
+
+            button {
+              @include flex;
+              background: $background-count;
+              border-radius: 20px;
+              width: 32px;
+              height: 32px;
+              border: 1px solid $background-count;
+              margin-right: 16px;
+
+              .minus {
+                @include flex;
+                border: 1px solid $plus-minus;
+                height: 12px;
+                border-radius: 49px;
+                transform: rotate(90deg);
+              }
+
+              .plus1 {
+                @include flex;
+                position: relative;
+                left: 1px;
+                border: 1px solid $plus-minus;
+                border-radius: 49px;
+                transform: rotate(-180deg);
+                height: 12px;
+              }
+
+              .plus2 {
+                @include flex;
+                position: relative;
+                left: -1px;
+                border: 1px solid $plus-minus;
+                border-radius: 49px;
+                transform: rotate(90deg);
+                height: 12px;
+              }
+            }
+
+            span:nth-child(3) {
+              font-size: 16px;
+              line-height: 16px;
+              color: $text;
+              margin-right: 16px;
+            }
+          }
+
+          button {
+            @include button;
+            @include flex;
+            width: 180px;
+            margin-right: 32px;
+
+            img {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
