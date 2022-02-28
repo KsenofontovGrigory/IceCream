@@ -4,6 +4,10 @@
     max-width: 100%;
   }
 
+  .container-content div .cards-container {
+    justify-content: center;
+  }
+
   .cards-container {
     justify-content: space-around;
   }
@@ -59,12 +63,11 @@
   }
 
   .container-product-card .container .product-card .product-grid div:last-child p:nth-child(4) {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .container-product-card .container .product-card .product-grid div:last-child .count {
-    margin-bottom: 10px;
-    justify-content: center;
+    margin-bottom: 30px;
   }
 
   .container-product-card .container .product-card .product-grid div:last-child .count button {
@@ -78,15 +81,9 @@
   .container-product-card .container .product-card .product-grid div:last-child button {
     margin: 0;
   }
-}
 
-@media (max-width: 620px) {
-  .container-header .container-header-div .rightMenu .person {
-    margin-right: 5px;
-  }
-
-  .container-content div .logo-ice-cream img {
-    width: 100%;
+  .container-basket .container-content-basket .card-in-basket .one-product {
+    justify-content: normal;
   }
 
   .container-basket .container-content-basket {
@@ -106,6 +103,25 @@
   .container-basket .container-content-basket .sub-total div:first-child {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .container-header .container-header-div .rightMenu .person {
+    margin-right: 5px;
+  }
+
+  .container-content div .logo-ice-cream img {
+    width: 100%;
+  }
+
+  .container-product-card .container .product-card .product-grid div:last-child .button-basket {
+    display: block;
+  }
+
+  .container-product-card .container .product-card .product-grid div:last-child .button-basket div {
+    justify-content: normal;
+    margin: 10px;
   }
 }
 
